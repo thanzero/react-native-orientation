@@ -12,13 +12,9 @@ import java.util.List;
 
 public class OrientationPackage implements ReactPackage {
 
-    public OrientationPackage(Activity activity) { } // backwards compatability
-
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-        return Arrays.<NativeModule>asList(
-            new OrientationModule(reactContext)
-        );
+        return Arrays.<NativeModule>asList(new OrientationModule(reactContext));
     }
 
     @Override
